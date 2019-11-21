@@ -1,0 +1,61 @@
+<a routerLink="/films">
+    <span class="icon">
+        <i class="fas fa-chevron-left"></i>
+    </span>
+    <span>
+        Back to listing
+    </span>
+</a>
+<br><br>
+<div class="columns">
+    <div class="column">
+        <h1 class="title">
+            {{ film?.title }}
+        </h1>
+        <h2 class="subtitle">
+            Episode {{ film?.episode_id }}
+        </h2>
+    </div>
+    <div class="column is-4">
+        <p>
+            Directed by <b>{{ film?.director }}</b>
+            <br>
+            Produced by <b>{{ film?.producer }}</b>
+            <br>
+            Released at <b>{{ film?.release_date | date: 'fullDate' }}</b>
+        </p>
+    </div>
+</div>
+<hr>
+<div class="columns">
+    <div class="column">
+        <h3 class="title is-size-5">
+            Opening crawl
+        </h3>
+        <p>
+            {{ film?.opening_crawl }}
+        </p>
+    </div>
+    <div class="column is-4">
+        <h3 class="title is-size-5">
+            How many different entities appear?
+        </h3>
+        <ul>
+            <li>
+                <b>{{ film?.characters.length }}</b> characters
+            </li>
+            <li>
+                <b>{{ film?.planets.length }}</b> planets
+            </li>
+            <li>
+                <b>{{ film?.starships.length }}</b> starships
+            </li>
+            <li>
+                <b>{{ film?.vehicles.length }}</b> vehicles
+            </li>
+            <li>
+                <b>{{ film?.species.length }}</b> species
+            </li>
+        </ul>
+    </div>
+</div>

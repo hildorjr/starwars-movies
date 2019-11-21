@@ -1,0 +1,40 @@
+<h1 class="title">
+    Star Wars Films
+</h1>
+<div class="control has-icons-left">
+    <input
+        class="input is-medium"
+        type="text"
+        placeholder="Type episode number or title to search..."
+        [(ngModel)]="search">
+    <span class="icon is-left">
+        <i class="fas fa-search"></i>
+    </span>
+</div>
+<br>
+<div class="columns is-multiline">
+    <div class="column is-6" *ngFor="let film of filteredFilms">
+        <div class="box">
+            <p class="title is-size-5" routerLink="/films/{{ film.url.slice(film.url.length - 2) }}">
+                {{ film.title }}
+            </p>
+            <p class="subtitle is-size-6">
+                Episode {{ film.episode_id }}
+            </p>
+            <p>
+                {{ film.opening_crawl | slice: 0:100 }}...
+            </p>
+            <br>
+            <div class="has-text-right">
+                <a routerLink="/films/{{ film.url.slice(film.url.length - 2) }}">
+                    <span>
+                        See details
+                    </span>
+                    <span class="icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
