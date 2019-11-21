@@ -13,19 +13,19 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-You will need to have installed NPM and the Angular CLI
+You will need to have installed NPM and the Angular CLI.
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+A step by step series of examples that tell you how to get a development env running.
 
-First, after cloning the repo, you must install the dependencies
+First, after cloning the repo, you must install the dependencies:
 
 ```
 npm install
 ```
 
-To run the development server, just type
+To run the development server, just type:
 
 ```
 ng serve
