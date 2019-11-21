@@ -8,7 +8,6 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class AppComponent implements OnInit {
 
-  title: string = 'desafio-front-filmes';
   showMenu: boolean = false;
 
   constructor(private router: Router) { }

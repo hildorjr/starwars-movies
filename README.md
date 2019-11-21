@@ -1,27 +1,46 @@
-# DesafioFrontFilmes
+# Desafio Front Filmes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
+This is a front-end challenge, made for SouthSystem, the requisites were the following:
+* Create a website that uses the StarWars API: https://swapi.co/
+* Must be developed in Angular or React
+* Must have unit tests
+* Must have a readme file
+* Must be on a public repo (this one)
 
-## Development server
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-## Code scaffolding
+### Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+You will need to have installed NPM and the Angular CLI
 
-## Build
+### Installing
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+A step by step series of examples that tell you how to get a development env running
 
-## Running unit tests
+First, after cloning the repo, you must install the dependencies
+
+```
+npm install
+```
+
+To run the development server, just type
+
+```
+ng serve
+```
+
+Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Running the tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Deployment
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Further help
+## Authors
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* **Hildor Júnior** - [hildorjr](https://github.com/hildorjr)
