@@ -1,6 +1,6 @@
 # Desafio Front Filmes
 
-This is a front-end challenge, made for SouthSystem, the requisites were the following:
+This is a front-end challenge, made for a hiring process, the requisites were the following:
 * Create a website that uses the StarWars API: https://swapi.co/
 * Must be developed in Angular or React
 * Must have unit tests
