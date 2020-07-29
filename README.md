@@ -1,5 +1,8 @@
 # Star Wars Movies
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bec491a4-de03-4649-b1be-bc6849f617c4/deploy-status)](https://app.netlify.com/sites/swmovies/deploys)
+
+
 This is a website that uses the [StarWars API](https://swapi.dev) to provide a browser for details in all Star Wars movies.
 
 ## Getting Started
