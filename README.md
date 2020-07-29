@@ -1,11 +1,6 @@
-# Desafio Front Filmes
+# Star Wars Movies
 
-This is a front-end challenge, made for a hiring process, the requisites were the following:
-* Create a website that uses the StarWars API: https://swapi.co/
-* Must be developed in Angular or React
-* Must have unit tests
-* Must have a readme file
-* Must be on a public repo (this one)
+This is a website that uses the [StarWars API](https://swapi.dev) to provide a browser for details in all Star Wars movies.
 
 ## Getting Started
 
