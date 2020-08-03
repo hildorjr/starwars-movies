@@ -21,7 +21,7 @@ export class FilmComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.getFilm(parseInt(this.route.snapshot.paramMap.get('id')));
+    this.getFilm(parseInt(this.route.snapshot.paramMap.get('id'), 10));
   }
 
 }
