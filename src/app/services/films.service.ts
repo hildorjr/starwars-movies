@@ -6,10 +6,10 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export class FilmsService {
-  
+
   apiUrl = `${environment.url}films/`;
   apiUrlQuery = '?format=json';
-  
+
   constructor(private http: HttpClient) { }
 
   getFilms() {
@@ -17,7 +17,7 @@ export class FilmsService {
   }
 
   getFilm(id: number) {
-    return this.http.get(`${this.apiUrl}${id}${this.apiUrlQuery}`);
+    return this.http.get(`${this.apiUrl}${id}/${this.apiUrlQuery}`);
   }
-  
+
 }

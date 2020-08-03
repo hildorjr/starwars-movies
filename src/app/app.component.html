@@ -1,35 +1,13 @@
 <ngx-loading-bar
-    color="#000000"
+    color="#ffdd57"
     height="5px"
     [includeSpinner]="false">    
 </ngx-loading-bar>
-<nav class="navbar is-warning">
-    <div class="navbar-brand">
-        <a class="navbar-item" href="/">
-            <img src="assets/images/logo.png">
-        </a>
-        <a class="navbar-burger burger" (click)="toggleMenu()">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-        </a>
+<div class="hero is-warning has-text-centered">
+    <div class="hero-body">
+        <img src="assets/images/logo.png">
     </div>
-    <div class="navbar-menu" [ngClass]="{ 'is-active': showMenu }">
-        <div class="navbar-start" (click)="toggleMenu()">
-            <a class="navbar-item" routerLink="/films">
-                Films
-            </a>
-            <a class="navbar-item" target="_blank" href="https://github.com/hildorjr/starwars-movies">
-                <span class="icon">
-                    <i class="fab fa-github"></i>
-                </span>
-                <span>
-                    Github
-                </span>
-            </a>
-        </div>
-    </div>
-</nav>
+</div>
 <div class="section main-section">
     <div class="container">
         <router-outlet></router-outlet>
@@ -43,6 +21,16 @@
                 <i class="fas fa-heart"></i>
             </span>
             by <a href="https://hildor.com.br" target="_blank">Hildor</a>
+            <br>
+            Source code can be found at 
+            <a target="_blank" href="https://github.com/hildorjr/starwars-movies">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+                <span>
+                    Github
+                </span>
+            </a>
         </p>
     </div>
 </footer>

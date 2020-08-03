@@ -9,17 +9,16 @@ import { FilmsService } from '../../services/films.service';
 export class FilmsComponent implements OnInit {
 
   films: any[] = [];
-  search: string = '';
+  search = '';
 
   constructor(private filmsService: FilmsService) { }
 
   get filteredFilms() {
     return this.films.filter((film) => {
-      const
-        search = this.search.toLocaleLowerCase(),
-        title = film.title.toLocaleLowerCase();
-      return title.includes(search) || film.episode_id == search;
-    }).sort((a,b) => (a.episode_id > b.episode_id) ? 1 : ((b.episode_id > a.episode_id) ? -1 : 0));
+      const search = this.search.toLocaleLowerCase();
+      const title = film.title.toLocaleLowerCase();
+      return title.includes(search) || film.episode_id === search;
+    }).sort((a, b) => (a.episode_id > b.episode_id) ? 1 : ((b.episode_id > a.episode_id) ? -1 : 0));
   }
 
   getFilms() {
